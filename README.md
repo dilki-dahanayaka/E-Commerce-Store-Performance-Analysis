@@ -29,3 +29,34 @@ my_internship_project/
 │
 ├── run_all.py                      # Central pipeline automation orchestrator
 └── README.md                       # Project documentation
+
+________________________________________
+⚙️ Methodology & Pipeline Breakdowns
+🧼 1. Data Cleaning & Preserving Integrity (1_data_cleaning.py)
+•	Processes 885,129 raw entry rows down to 884,464 clean rows.
+•	To prevent valuable data loss, structural missing values in fields like brand and category_code were explicitly imputed with an 'Unknown' placeholder rather than using destructive row-dropping methods.
+•	Erroneous rows containing negative prices, zero prices, and absolute duplicate log signatures were entirely purged to maximize data quality.
+📈 2. Core KPI Computations & Trend Analysis (2_kpi_and_eda.py)
+•	Total Revenue: $5,125,113.92
+•	Total Orders Completed: 37,343
+•	Average Order Value (AOV): 137.24(Derivedvia\text{Total Revenue} \div \text{Total Orders}$)
+•	Generates continuous time-series grouping to evaluate transactional behaviors by the hour.
+🛒 3. User Conversion Funnel Engineering (3_funnel_analysis.py)
+Maps step-by-step user migration interactions to trace drop-off points:
+1.	Product Views: 793,089 (Baseline 100%)
+2.	Cart Additions: 54,032 (Retained: 6.81%)
+3.	Purchase Completions: 37,343 (Final Conversion: 4.71%)
+________________________________________
+🖥️ Interactive Web Dashboard Features
+Built with Streamlit, the prototype provides business stakeholders with high-level visual tools:
+•	Dynamic KPI Cards: Displays high-priority transaction status instantly.
+•	Top Brands Bar Chart: Interactive visual showcasing the top 5 brands driving the highest revenue share (led by MSI and Gigabyte).
+•	Platform Actions Donut Chart: A vega-lite implementation depicting real-time user action distributions.
+•	Hourly Sales Trend Line Graph: Isolates top trading hours during the day to help schedule marketing campaigns and manage infrastructure loads.
+________________________________________
+💡 Key Business Recommendations Formulated
+1.	Product Page UI/UX Refactoring (Critical): A major friction point exists between product viewing and cart additions, where 90.92% of active users drop off. Redesigning call-to-actions (e.g., "Add to Cart") and clarifying layouts is highly advised.
+2.	Inventory Data Governance (Warning): Unbranded items (Unknown) accounted for nearly $600k in total revenue. Restructuring the seller inventory intake portal to make Brand Name a mandatory field is necessary to mitigate long-term listing risks.
+3.	Retention & Loyalty Implementation (Success): Since repeat consumers generate a reliable core of sustained transactions, deploying an automatic loyalty rewards framework will maximize customer lifetime value (LTV).
+
+
