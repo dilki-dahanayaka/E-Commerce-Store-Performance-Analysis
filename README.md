@@ -137,44 +137,7 @@ Tracks customer progression through the purchasing journey.
 ---
 
 ## 🖥️ Interactive Dashboard Features
-
-Built using **Streamlit**, the dashboard provides business stakeholders with real-time analytical visibility.
-
-### Dashboard Components
-
-#### 📊 KPI Cards
-Displays key performance indicators including:
-
-- Revenue
-- Orders
-- Conversion Metrics
-
-#### 🏆 Top Brands Revenue Chart
-Interactive visualization showing the highest revenue-generating brands.
-
-Top performers include:
-
-- MSI
-- Gigabyte
-- Asus
-- Palit
-- Sapphire
-
-#### 🍩 User Action Distribution Donut Chart
-Visualizes platform activity distribution:
-
-- Product Views
-- Cart Additions
-- Purchases
-
-#### 📈 Hourly Sales Trend Analysis
-Identifies peak transaction hours to support:
-
-- Marketing scheduling
-- Resource allocation
-- Infrastructure planning
-
----
+<img width="1209" height="636" alt="Screenshot (327)" src="https://github.com/user-attachments/assets/1b3d41af-3d44-4fbe-883d-d3b68714daa9" />
 
 ## 💡 Key Business Recommendations
 
